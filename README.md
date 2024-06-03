@@ -19,7 +19,3 @@ Bu proje, kullanıcıların bir üründen elde edecekleri karı hesaplamalarına
 ## Geliştirme
 
 Bu proje herhangi bir geliştirme gerektiriyorsa, lütfen bir Issue açın veya bir Pull Request gönderin. Katkılarınızı bekliyoruz!
-
-## Lisans
-
-Bu proje MIT Lisansı altında lisanslanmıştır. Daha fazla bilgi için `LICENSE` dosyasına bakın.
