@@ -83,4 +83,8 @@ if (!isNaN(purchasePrice) && !isNaN(sellingPrice) && !isNaN(commissionRate) && !
     $result.removeClass('d-none');
 }
 }
+
+$('.refresh-button').on('click', function () {
+    location.reload(); // Sayfayı yenile
+});
 });
