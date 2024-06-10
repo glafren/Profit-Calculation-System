@@ -6,23 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kar Hesaplama Sistemi</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="anonymous" referrerpolicy="no-referrer" />
     <link href="styles.css" rel="stylesheet">
 </head>
 
 <body>
     <div class="container">
         <h1 class="text-center mb-4">Kar Hesaplama Sistemi</h1>
+        <div class="mb-4 text-center" id="exchangeRateDisplay">1 Dolar = ... TL</div>
         <form id="profitForm">
             <div class="mb-3">
                 <label for="sellingPrice" class="form-label">Ürün Satış Fiyatı ($)</label>
                 <input type="number" class="form-control" id="sellingPrice" placeholder="Satış fiyatını girin" step="0.01" required>
             </div>
             <div class="mb-3">
-                <label for="purchasePrice" class="form-label">Ürün Alış Fiyatı ($)</label>
+                <label for="purchasePrice" class="form-label">Ürün Alış Fiyatı (TL)</label>
                 <input type="number" class="form-control" id="purchasePrice" placeholder="Alış fiyatını girin" step="0.01" required>
+                <div class="text-primary mt-1" id="purchasePriceInUSD"></div> <!-- TL'nin Dolar karşılığı -->
             </div>
-
+            <input type="hidden" id="exchangeRate">
             <div class="mb-3">
                 <label for="commissionRate" class="form-label">Komisyon Oranı (%)</label>
                 <input type="number" class="form-control" id="commissionRate" placeholder="Komisyon oranını girin" step="0.01" required>
@@ -53,4 +55,3 @@
 </body>
 
 </html>
-

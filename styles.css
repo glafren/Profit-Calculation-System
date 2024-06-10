@@ -22,11 +22,9 @@ body {
 }
 
 .custom-submit-button {
-    background-color: #1f2f3f;
-    border-color: #1f2f3f;
-    border-radius: 3px;
-    height: 50px;
-    font-size: 20px;
+    background-color: #1f2f3d;
+    border-color: #1f2f3d;
+    font-size: 1.25rem; /* Yazı boyutunu büyüt */
 }
 
 .custom-submit-button:hover {
@@ -34,3 +32,6 @@ body {
     border-color: #ff7f50;
 }
 
+.text-primary {
+    color: #007bff;
+}
